@@ -1,0 +1,2412 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.isterre.fr/ieo/"
+     xml:base="http://www.isterre.fr/ieo/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:entity_attribute1="http://purl.obolibrary.org/obo/envo-p/patterns/entity_attribute/"
+     xmlns:foo="http://geneontology.org/foo/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:dqv="http://www.w3.org/ns/dqv#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:envo="http://purl.obolibrary.org/obo/envo#"
+     xmlns:entity_attribute="http://purl.obolibrary.org/obo/oba/patterns/entity_attribute/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:entity_quality="http://purl.obolibrary.org/obo/oba/patterns/entity_quality/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:process_attribute="http://purl.obolibrary.org/obo/envo-p/patterns/process_attribute/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.isterre.fr/ieo/">
+        <owl:versionIRI rdf:resource="http://www.isterre.fr/ieo/1.0/"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2017-03-24/iao-main.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obi/2017-02-22/obi_core.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/temporal-intervals.owl"/>
+        <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/envo/releases/2017-05-10/envo.owl"/>
+        <owl:imports rdf:resource="http://purl.org/ontology/bibo/"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/bfo-classes-minimal.owl"/>
+        <dc:title>Industrial Ecology Ontology (IEO)</dc:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <dc:creator>Cyril François</dc:creator>
+        <dc:identifier>http://www.isterre.fr/ieo/</dc:identifier>
+        <dc:publisher>Institut des Sciences de la Terre (ISTerre)</dc:publisher>
+        <dc:language>en</dc:language>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000028 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.isterre.fr/ieo/IEO_0000028">
+        <obo:IAO_0000115 xml:lang="en">A mathematical annotation is a mathematical symbol or expression used to represent the entity.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Based on AGB definition of &quot;preferred mathematical notation&quot;</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">has mathematical notation</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#related"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#inCategory -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dqv#inCategory"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000108 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000108">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000157"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:label xml:lang="en">exists at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000117">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:BFO_0000179>o-has-part</obo:BFO_0000179>
+        <rdfs:label xml:lang="en">has occurrent part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000125 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000125">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000169"/>
+        <obo:BFO_0000179>has-s-dep_st</obo:BFO_0000179>
+        <rdfs:label xml:lang="en">has dependent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000132 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000132">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:BFO_0000179>o-part-of</obo:BFO_0000179>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: a (continuant or occurrent) part of itself. We appreciate that this is counterintuitive for some users, since it implies for example that President Obama is a part of himself. However it brings benefits in simplifying the logical formalism, and it captures an important feature of identity, namely that it is the limit case of mereological inclusion.</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">b occurrent_part_of c =Def. b is a part of c &amp; b and c are occurrents. (axiom label in BFO2 Reference: [003-002])</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">part of occurrent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000157 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000157">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000600 xml:lang="en">[copied from inverse property &apos;exists at&apos;] b exists_at t means: b is an entity which exists at some temporal region t. (axiom label in BFO2 Reference: [118-002])</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">during which exists</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000169 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000169">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <obo:BFO_0000179>s-depends-on_st</obo:BFO_0000179>
+        <rdfs:label xml:lang="en">depends</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <owl:inverseOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000000"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000999 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000999">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <obo:IAO_0000115 xml:lang="en">A relation between a categorical measurement data item and the categorical label that indicates the value of that data item on the categorical scale.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has category label</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001015 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001015">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000000 -->
+
+    <owl:ObjectProperty rdf:about="http://www.isterre.fr/ieo/IEO_0000000">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000600 xml:lang="en">When an information content entity (ICE) is about an entity, this entity is informed by this ICE. The ICE informs something, i.e. give information about something.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">is informed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000007 -->
+
+    <owl:ObjectProperty rdf:about="http://www.isterre.fr/ieo/IEO_0000007">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000125"/>
+        <rdfs:label xml:lang="en">has inflow</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000008 -->
+
+    <owl:ObjectProperty rdf:about="http://www.isterre.fr/ieo/IEO_0000008">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000125"/>
+        <rdfs:label xml:lang="en">has outflow</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000013"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000145 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000145">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000817 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01000817">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000983 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01000983">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000817"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000305 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <obo:IAO_0000115 xml:lang="en">A textual entity that names a document</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">document title</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000329 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000329">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000305"/>
+        <obo:IAO_0000115 xml:lang="en">A shorter version of a document title.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">running title</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000938 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000938">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:label xml:lang="en">categorical measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000963 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000963">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+        <obo:IAO_0000115 xml:lang="en">A label that is part of a categorical datum and that indicates the value of the data item on the categorical scale.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">categorical label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302910 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302910">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000112 xml:lang="en">Prediction of TF target sites based on atomistic models of protein-DNA complexes. BMC Bioinformatics. 2008 Oct 16;9(1):436. PMID: 18922190</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a process by which an  event or an entity is described before it actually happens or is being discovered and identified.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">prediction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.unep.org/sdg/SDGIO_00010072 -->
+
+    <owl:Class rdf:about="http://purl.unep.org/sdg/SDGIO_00010072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001173"/>
+        <obo:IAO_0000115 xml:lang="en">A service in which an ecosystem, usually natural, provides benefit to the well-being of human service consumers.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">environmental service</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">ecosystem service</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.unep.org/sdg/SDGIO_00010072"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A service in which an ecosystem, usually natural, provides benefit to the well-being of human service consumers.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://www.teebweb.org/resources/glossary-of-terms/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.ecoinvent.org/2013/ecospold#activityNameId -->
+
+    <owl:Class rdf:about="http://www.ecoinvent.org/2013/ecospold#activityNameId">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:label xml:lang="en">ecoinvent activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ecoinvent.org/2013/ecospold#geography -->
+
+    <owl:Class rdf:about="http://www.ecoinvent.org/2013/ecospold#geography">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:label xml:lang="en">ecoinvent geography</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exiobase.eu/2007#geography -->
+
+    <owl:Class rdf:about="http://www.exiobase.eu/2007#geography">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:label xml:lang="en">exiobase geography</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000001 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002577"/>
+        <obo:IAO_0000112 xml:lang="en">A natural environmental system that fulfills a function or responds to a need for humans is a functional system.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">An industrial system is a functional system.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A material entity consisting of multiple components that are causally integrated to fulfill at least one function or responds to at least one need.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">functional system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000002 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The manufacturing of a car is an human activity process that occurs in the car manufacture.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A functional process is a planned process that realizes a function regarding a functional system.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">functional process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000003 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000003">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A functional process during which the functional system or some parts of it is set up, assembled to realize its function.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">setting-up process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000004 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000004">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A functional process during which the functional system realizes its function.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">operating process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000005 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000005">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">The maintenance process is the process that realizes the maintenance of the functional system.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">maintenance process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000006 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000006">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A functional process during which the functional system or some parts of it is made available for others functional processes.</obo:IAO_0000115>
+        <obo:IAO_0000117>Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">disposal process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000009 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000125"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002502"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The flow exchange of the raw materials consumed by a manufacture to build the cars.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An exchange of a quantity of something with the surrounding of a system through its boundaries that is necessary to its proper functioning.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">functional system exchange</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000010 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000010">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000125"/>
+                                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000002"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000009"/>
+        <obo:IAO_0000115 xml:lang="en">The exchange of a quantity of a material entity that is needed or induced by a functional process.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">material exchange</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000011 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000011">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001173"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000125"/>
+                                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000002"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000009"/>
+        <obo:IAO_0000115 xml:lang="en">A service exchange is changes   the   conditions   of   the   consuming   units,   or facilitates  the  exchange  of  something.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Based on &quot;System of National Accounts 2008&quot; :
+Services   are   the   result   of   a   production   activity   that changes   the   conditions   of   the   consuming   units,   or facilitates  the  exchange  of  products  or  financial  assets.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">service exchange</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000012 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000112 xml:lang="en">A coproduct could be a waste in one economy and a valorisable product in another. For instance, some chemical product are forbidden in some country, such as the asbestos products.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">The role plays by a material entity regarding its economic value and interest.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">economical role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000013 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000112 xml:lang="en">The disposition of fresh water to cool the technical engines in a nuclear power plant.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The disposition the cable to link the wind turbine to the electrical transmission network in a wind power farm.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">The functional disposition is the disposition of interest of a material entity for which it is used.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The functional disposition is not the BFO&apos;s function term. Indeed, the functional disposition is the disposition of an entity material in the point of view of its usage. It could be a function if the entity material was designed for this usage.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="fr">fonction d&apos;usage</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">functional disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000014 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000014">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000059"/>
+        <obo:IAO_0000112 xml:lang="en">1 kg of copper for the copper production assessment, or 1 km of displacement for the transportation by electric car assessment.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A product of reference with its unit label for which an life cycle assessment is realized.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The reference product coefficient is always equal to one (1 kg, 1 m, 1 km).
+See ELCD documentation for further explainations.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">reference product coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000015 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000015">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000056"/>
+        <obo:IAO_0000112 xml:lang="en">&quot;load hour&quot; is the parameter of the &quot;coal power plant&quot; unit process.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">The unit process parameter is a parameter that defines a variable which depends the value of coefficient.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">unit process parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000016 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000016">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000018"/>
+        <obo:IAO_0000115 xml:lang="en">The intermediate coefficient that represents the exchange of consumed good or service coming form technosphere. It is modelized as positive coefficient.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">intermediate consumption coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000017 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000017">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000018"/>
+        <obo:IAO_0000115 xml:lang="en">An intermediate coefficient that represents the exchange of treatment service coming form technosphere. It is modelized as negative coefficient.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">treatment coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000018 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000018">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The unit process coefficient that represents the exchange coming from technosphere.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">intermediate coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000019 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000019">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000018"/>
+        <obo:IAO_0000115 xml:lang="en">An intermediate coefficient that represents the joint, by- or secondary product of a process and going to the technosphere. It exists only for unit process inventory by system extension and is a negative coefficient.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">avoided product coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000020 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000020">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000022"/>
+        <obo:IAO_0000112 xml:lang="en">10 kg of iron ores, in ground.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An elementary coefficient that represents a material entity that coming from behind the technosphere.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">resource coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000021 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000021">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000022"/>
+        <obo:IAO_0000112 xml:lang="en">100 kg of C02, in air.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">The discharge coefficient is an unit process coefficient that represents the discharge of product that ends behind the technosphere.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">discharge coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000022 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000022">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">An unit process coefficient that represents an exchange realized behind the technosphere.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Part of the lithosphere is not in the biosphere, e.g. the mineral deposit, but it is considered as an elementary exchange/flow.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">elementary coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000023 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000023">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000056"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_0000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The quantity of CO2 emitted by a car for one km. In this case, the quantity of CO2 is calculated by dividing the amount of CO2 emitted by the car during its operating phase by the total amount of km travelled by the car.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An unit process entity that represent the amount of one exchange of a process when it is reduced to one functional unit of the reference product.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">unit process coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000024 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000024">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000056"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The quantity data of all input and output of a power plant to produce one kWh (functional unit): quantity of water, of coal, of electricity etc.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An unit process entity that represents all inputs and outputs necessary or induced by the production of one functional unit of one reference product of one process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">unit process inventoy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000025 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001934"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A data transformation from the measures or predicted values of the exchanges of a human activity process during its entire duration into a unit process inventory and its parts (technical coefficient).</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">unit process modelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000026 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000026">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000025"/>
+        <obo:IAO_0000115 xml:lang="en">A unit process modelling in which the inputs and the outputs of a process are assigned to its multiple products according to an arbitrary factor.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The factor could be based on ratio based on the economic value of the products, internal cost accounting principles, or any other factor that is considered to represent the relative share of responsibility and reflect the physical or economic causality between the inputs and outputs and the multiple products of the process in question.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Adapted from:
+Suh, Sangwon, Bo Weidema, Jannick Hoejrup Schmidt, et Reinout Heijungs. 2010. « Generalized Make and Use Framework for Allocation in Life Cycle Assessment ». Journal of Industrial Ecology 14 (2): 335‑53. doi:10.1111/j.1530-9290.2010.00235.x.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">partitioning modelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000027 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000027">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000025"/>
+        <obo:IAO_0000115 xml:lang="en">A unit process modelling in which one coproduct of the process replaces an equivalent products produced elsewhere, thus avoids the exchanges induced by this equivalent product.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">system extension modelling</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">Adapted from:
+Suh, Sangwon, Bo Weidema, Jannick Hoejrup Schmidt, et Reinout Heijungs. 2010. « Generalized Make and Use Framework for Allocation in Life Cycle Assessment ». Journal of Industrial Ecology 14 (2): 335‑53. doi:10.1111/j.1530-9290.2010.00235.x.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">substitution modelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000029 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_0000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A data transformation that is the calculation of the life cycle inventory and its coefficients from the measure or predicted value of exchanges of a process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">life cycle inventory calculation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000030 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000030">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000057"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A compilation and a quantification of elementary inputs and outputs induced by one unit of reference product considering its life cycle.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">ISO 14040:2006, Environmental management — Life cycle assessment — Principles and framework</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">life cycle inventory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000031 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000031">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000033"/>
+        <obo:IAO_0000115 xml:lang="en">The aggregated resource data is the cumulated quantification of one elementary flow from the environment for a product throughout its life cycle.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Could be better defined. Not satisfaying.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">aggregated resource data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000032 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000032">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000033"/>
+        <obo:IAO_0000115 xml:lang="en">An aggregated discharge data is a cumulated quantification of one elementary flow discharged in the environment for a product throughout its life cycle.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Could be better defined. Not satisfaying.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">aggregated discharge data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000033 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000033">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000057"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A cumulated quantification of one elementary of one unit of reference product throughout its life cycle. It is a part_of the life cycle inventory (LCI).</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Cyril François</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">aggregated elementary flow data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000034 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_0000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">a data transformation that is the calculation of a life cycle impact assessment from the life cycle inventory.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">life cycle impact assessment calculation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000035 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000035">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000058"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A compilation and a quantification of the impact score induced by one unit of reference product considering its life cycle. It aims to understand and evaluate the magnitude and significance of the potential environmental impacts.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Adapted from ISO 14040:2006</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">life cycle impact assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000036 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000036">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000058"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_0000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The impact score is the cumulated quantification of one environmental impact indicator for a product throughout its life cycle. It is a part_of of the life cycle impact assessment (LCIA).</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">ISO 14040:2006, Environmental management — Life cycle assessment — Principles and framework</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">impact score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000037 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001934"/>
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000058"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The impact characterisation factor is a formula and the quantification of an impact indicator.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">characterization factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000038 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000038">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000058"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The kg Chloroethylene into air-eq is an impact indicator (midpoint) to represent the human toxicity impact catagory in the Impact 2002+ assessment method.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">The impact indicator is a quantifiable representation of an environmental issue of concern (impact category) to which life cycle inventory results may be assigned.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">ISO 14044</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">impact indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000039 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000039">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000058"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000205"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The Land occupation or Respiratory inorganics of the IMPACT 2002+ impact assessment method are impact categories.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A class representing environmental issues of concern to which life cycle inventory results may be assigned.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">ISO 14044</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">impact category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000040 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000058"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">Based on UNEP, 2016. 1 : Global Guidance for life cycle impact assessment indicators. S.l. United Nations Environment Program.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">A whole of practices, impact category and indicator to assess the environmental impact of a process.</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">impact assessment method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000041 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000041">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000064"/>
+        <obo:IAO_0000115 xml:lang="en">A life cycle exchange identifier of one elementary flow.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">elementary exchange identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000042 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000042">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000064"/>
+        <obo:IAO_0000115 xml:lang="en">A life cycle exchange identifier of one intermediate flow.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">intermediate exchange identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000043 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a life cycle database.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">life cycle database identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000044 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000579"/>
+        <obo:IAO_0000115 xml:lang="en">A centrally registered identifier registry that represents the whole of the identifiers of a life cycle database.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">life cycle database registry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000045 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <obo:IAO_0000115>A data transformation is a calculation of a parameter of a model.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">parameterized calculation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000046 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000046">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000052"/>
+        <obo:IAO_0000115 xml:lang="en">The degree to which the data represents the expected information.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">W3C, Data on the Web Best Practices: Data Quality Vocabulary.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">completness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000047 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000052"/>
+        <obo:IAO_0000115 xml:lang="en">The degree to which the geography represented by the data is representative of the geography represented by a data set.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Based on Ecospold 2 and Overview and Methodology, Ecoinvent, 2007</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">geographical correlation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000048 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000048">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000052"/>
+        <obo:IAO_0000115 xml:lang="en">The degree to which a data item can be depended on to be accurate.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Oxford dictionnary, 2017</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">reliability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000049 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000052"/>
+        <obo:IAO_0000115 xml:lang="en">The degree to which the technology represented by the data is representative of the technology represented by a data set.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Based on Ecospold 2 and Overview and Methodology, Ecoinvent, 2007</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">technology correlation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000050 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000052"/>
+        <obo:IAO_0000115 xml:lang="en">The degree to which the period represented by the data is representative of the period represented by a data set.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Based on Ecospold 2 and Overview and Methodology, Ecoinvent, 2007</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">temporal correlation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000051 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+        <obo:IAO_0000112 xml:lang="en">The product is in a growth stage or in decline stage.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">The assessment of the maturity of a technology regarding the market.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">product life cycle stage assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000052 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115 xml:lang="en">A quality of a data item</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">data quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000053 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
+        <obo:IAO_0000115 xml:lang="en">A label that represents the maturity of a technology regarding the market.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">product life cycle stage label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000054 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">The measurement of the quality of a data.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The data quality measurement could be a categorical measurement but could be without unit too. It could be a judgment of one expert or a statistical percentage, etc. Could be reformulated or better defined.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">data quality measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000055 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
+        <obo:IAO_0000115 xml:lang="en">A label that represents a lca pedigree dimension.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">lca pedigree label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000056 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000056">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000059"/>
+        <obo:IAO_0000115 xml:lang="en">The unit process entity is an information artifact about one unit process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">unit process entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000057 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000057">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000059"/>
+        <obo:IAO_0000116 xml:lang="en">The life cycle inventory entity is a information about the life cycle inventory.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">life cycle inventory entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000058 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000058">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000059"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity about an environmental impact assessment.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">life cycle impact assessment entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000059 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity about the life cycle aspect of a process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">life cycle content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000060 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">The supply and use tables (SUT) and the input output analysis (IOA) of the European zone.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about the input output tables : the supply and use table or symmetric input-output table.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">input-output content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000061 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000061">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000024"/>
+        <rdfs:label xml:lang="en">unit process inventory by partitioning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000062 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000062">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000024"/>
+        <rdfs:label xml:lang="en">unit process inventory by system extension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000063 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000063">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000022"/>
+        <obo:IAO_0000112 xml:lang="en">The bee&apos;s pollination.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The treatment from a non technical treatment system, i.e. natural ecosystem.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An elementary coefficient that represents a service that coming from an ecosystem.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ecosystem service coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_0000064 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label xml:lang="en">life cycle exchange identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000000 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The whole of the economic activities within which resources as capital goods, labour, manufacturing techniques or intermediary products are combined to produce specific goods or services according to a classification of the economic activities.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Have to be reformulated better.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">economic sector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000001 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002577"/>
+        <obo:IAO_0000115 xml:lang="en">The economic sector system can be defined as a complex system of organised commercial or non-commercial relations between participants, having the capacity to solve a productive issue relating to a type of goods or services.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Can be reformulated.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">Carassus, J. (2004). The construction sector system approach: an international framework. CIB, Rotterdam.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">economic sector system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000002 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000002">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An product by product modelling that is based on the technology by product assumption.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">product technology modelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000003 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000003">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An product by product modelling that is based on the technology by industry assumption.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">industry technology modelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000004 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000004">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000009"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.isterre.fr/ieo/IEO_1000020"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000019"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An input-output modelling of product by product table from an whole of use and supply tables.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">product by product modelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000005 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000005">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An industry by industry modelling that is based on a fixed industry sales structure assumption.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">fixed industry sales structure modelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000006 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000006">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An industry by industry modelling that is based on a fixed product sales structure assumption.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">fixed product sales structure modelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000007 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000007">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000009"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.isterre.fr/ieo/IEO_1000020"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000019"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An input-output modelling of industry by industry table from an whole of use and supply tables.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">industry by industry modelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000009 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:label xml:lang="en">input-output modelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000010 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000010">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000029"/>
+        <obo:IAO_0000112 xml:lang="en">The input requirements for products (copper ores, steel, oil, etc.) in million of Euro per one million of Euro of copper products.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">The product by product inventory is the product exchanges of products for one unit of output product.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">product by product inventory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000011 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000011">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000029"/>
+        <obo:IAO_0000115 xml:lang="en">The industry by industry inventory is the industry exchanges for one unit of output of one industry.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">industry by industry inventory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000012 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000012">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000015"/>
+        <obo:IAO_0000115 xml:lang="en">The input coefficient is the  amount of one of the input requirements per unit of output.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">input coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000013 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000013">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000012"/>
+        <obo:IAO_0000115 xml:lang="en">The input treatment coefficient is the  amount of treatment requirement per unit of output.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The treatment is considered as a treatment to be taken mathematically into account.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">input treatment coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000014 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000014">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000015"/>
+        <obo:IAO_0000115 xml:lang="en">The avoided output coefficient is the amount of one of avoided output per unit of output, i.e. amount of output that is not necessary to be produced by the dedicated activity.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">avoided output coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000015 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000015">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000060"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The copper ore requirement for the production of one unit of copper product.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">The technical coefficient represents one exchange within the industry for one unit of one economic sector&apos;s output.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">input-output technical coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000016 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000016">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000018"/>
+        <obo:IAO_0000115 xml:lang="en">The amount of one consumed resource for one unit of output.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">input-output resource coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000017 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000017">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000018"/>
+        <obo:IAO_0000115 xml:lang="en">The amount of one induced discharge for one unit of output.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">input-output discharge coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000018 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000018">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000060"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The intervention coefficient represents the amount of one environmental intervention for one unit of output.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">input-output intervention coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000019 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000019">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000028"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_1000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The use table of the European zone that shows the consumption by products of each industrial sector and for exports of the European zone, which the consumptions are valued at purchaser&apos; prices.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">The use table shows the use of goods and services by product and by type of use for intermediate consumption by industry, final consumption expenditure, gross capital formation and exports of an economy for a given period of time.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The monetary use table has to show the components of gross value added by industry for compensation of employees, other taxes less subsidies on production, consumption of fixed capital, and net operating surplus.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">Based on Eurostat&apos;s definition.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">use table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000020 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000020">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000028"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_1000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The supply table of the European zone that shows the supply by products of each industrial sector and imports of the European zone, which the output are valued at basic prices.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A supply table shows the domestic and imported supply of goods and services by type of product of an economy for a given period of time.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The supply table in monetary content has to provide the valuation matrices  for trade and transport margins and taxes less subsidies on products to allow a transformation of supply from basic prices to purchasers’ prices.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">Based on Eurostat&apos;s definition</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">supply table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000021 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000021">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000028"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000009"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000009"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The input-output tables of the European Zone.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An input-ouput table that is an analytical tool derived from the supply and use tables that shows the inter-industry transactions as well as all expenditures on primary inputs.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Based on Eurostat</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">symmetric input-output table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000022 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000022">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000021"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A symmetric input-output table that is based on assumptions on the technology assumption and the product classification.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Based on Eurostat.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">product by product table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000023 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000023">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000021"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A symmetric input-output table that is based on assumptions on the sales structure and the industry classification.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Based on Eurostat</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">industry by industry table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000024 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000024">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000022"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A product by product table that is based on the assumption each product is produced in its own specific way, irrespective of the industry where it is produced.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Based on Eurostat.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">industry technology assumption table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000025 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000025">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000022"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A product by product table that is based on the assumption each product is produced in its own specific way, irrespective of the industry where it is produced.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Based on Eurostat.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">product technology assumption table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000026 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000026">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An industry by industry table that is based on the assumption each industry has its own specific sales structure, irrespective of its product mix.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Based on Eurostat.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">fixed industry sales structure table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000027 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000027">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_1000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An industry by industry table that is based on the assumption each product has its own specific sales structure, irrespective of the industry where it is produced.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Based on Eurostat.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">fixed product sales structure table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000028 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000028">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000060"/>
+        <obo:IAO_0000115 xml:lang="en">An input-output table is a means of presenting a detailed analysis of the process of production and the use of goods and services (products) and the income generated in that production. The input-output table can be either in the form of (a) supply and use tables or (b) symmetric input-output tables.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">OECD&apos;s glossary</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">input-output table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000029 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000029">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000060"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_1000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.isterre.fr/ieo/IEO_1000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The input-output inventory shows the exchanges for one unit of one economic sector&apos;s output.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">input-output inventory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000030 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000030">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000060"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">One million euro (M.Eur) of copper products is the reference output of the copper product inventory of the monetary product by product input-output table.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">The reference output represents one unit of the output of the input-output inventory. It is defined by measurement unit label: monetary unit (USD, USC, Euro, etc.) or physical unit (kg, mt, Mt, etc.).</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Cyril François</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">reference output</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000031 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000031">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000060"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">economic sector use inventory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_1000032 -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/ieo/IEO_1000032">
+        <rdfs:subClassOf rdf:resource="http://www.isterre.fr/ieo/IEO_0000060"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.isterre.fr/ieo/IEO_1000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">economic sector supply inventory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre.fr/link/classification_link_identifier -->
+
+    <owl:Class rdf:about="http://www.isterre.fr/link/classification_link_identifier">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isterre/link2/not_exist_activity -->
+
+    <owl:Class rdf:about="http://www.isterre/link2/not_exist_activity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#Dimension -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dqv#Dimension">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+        <rdfs:label xml:lang="en">linked data quality label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000000">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <obo:IAO_0000115 xml:lang="en">The  goods  or services  may  be  either  transformed  or  used  up  by  one
+production  process.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">intermediate product</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000001">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <obo:IAO_0000115 xml:lang="en">The final product is the role of the good or service produced and sold without intrinsic changes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">final product</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000002">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <obo:IAO_0000115 xml:lang="en">The  principal  activity  of  a  producer  unit  is  the  activity whose  value  added  exceeds  that  of  any  other  activity carried out within the same unit.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">principal product</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000003">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <obo:IAO_0000115 xml:lang="en">The by-products are products produced  together  with  principal  products.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">capital good</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000004">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <obo:IAO_0000118 xml:lang="en">A  secondary  activity  is  an  activity  carried  out  within  a single  producer  unit  in  addition  to  the  principal  activity and whose output, like that of
+ the principal activity, must be  suitable  for  delivery  outside  the  producer  unit.</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">secondary product</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000005">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <obo:IAO_0000115 xml:lang="en">The waste products are  the  unintended  and  undesired  outputs from  the  economy  which  have  zero  price  and  could be recycled into valorisable product.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">waste product</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000006">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <obo:IAO_0000115 xml:lang="en">Anthropogenic discharge are  the  unintended  and  undesired  outputs
+from  the  economy  which  have  zero  price that are discharged into natural environment.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">anthropogenic discharge</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000007">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <obo:IAO_0000115 xml:lang="en">Natural resources cover mineral and energy resources, soil, water and biological resources.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">natural resource</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000008">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <obo:IAO_0000115 xml:lang="en">Scrap are discarded or rejected materials that result from manufacturing or fabricating operations and are suitable for reprocessing.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">OECD, glossary</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">scrap product</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000009">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <rdfs:label xml:lang="en">joint-product</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000010">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <rdfs:label xml:lang="en">by-product</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000011 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000011">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <rdfs:label xml:lang="en">recyclable</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000012 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000012">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <rdfs:label xml:lang="en">waste to treat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000013">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000055"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <rdfs:label xml:lang="en">reliability</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000014">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <rdfs:label xml:lang="en">loss</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000015">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <rdfs:label xml:lang="en">flow from environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000016">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000012"/>
+        <rdfs:label xml:lang="en">flow to environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000017">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000053"/>
+        <rdfs:label xml:lang="en">outdated</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000018 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000018">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000053"/>
+        <rdfs:label xml:lang="en">old/decline stage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000019 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000019">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000053"/>
+        <rdfs:label xml:lang="en">mature/current</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000020">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000053"/>
+        <rdfs:label xml:lang="en">modern/growth stage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000021">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000053"/>
+        <rdfs:label xml:lang="en">new/market introduction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000022 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000022">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000055"/>
+        <rdfs:label xml:lang="en">temporal correlation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000023">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000055"/>
+        <rdfs:label xml:lang="en">technology correlation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isterre.fr/ieo/IEO_2000024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.isterre.fr/ieo/IEO_2000024">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000055"/>
+        <rdfs:label xml:lang="en">geographical correlation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#availability -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#availability">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Availability of a dataset is the extent to which data (or some portion of it) is present, obtainable and ready for use.</skos:definition>
+        <skos:prefLabel xml:lang="en">Availability</skos:prefLabel>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#interlinking"/>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#performance"/>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#accessibilityDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#completeness -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#completeness">
+        <rdf:type rdf:resource="http://www.isterre.fr/ieo/IEO_0000055"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Completeness refers to the degree to which all required information is present in a particular dataset.</skos:definition>
+        <skos:prefLabel xml:lang="en">Completeness</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#intrinsicDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#conciseness -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#conciseness">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Conciseness refers to the minimization of redundancy of entities at the schema and the data level.</skos:definition>
+        <skos:prefLabel xml:lang="en">Conciseness</skos:prefLabel>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#completeness"/>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#representationalConciseness"/>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#intrinsicDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#consistency -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#consistency">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Consistency means that a knowledge base is free of (logical/formal) contradictions with respect to particular knowledge representation and inference mechanisms.</skos:definition>
+        <skos:prefLabel xml:lang="en">Consistency</skos:prefLabel>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#conciseness"/>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#interoperability"/>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#syntaticValidity"/>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#intrinsicDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#interlinking -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#interlinking">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Interlinking refers to the degree to which entities that represent the same concept are linked to each other, be it within or between two or more data sources.</skos:definition>
+        <skos:prefLabel xml:lang="en">Consistency</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#accessibilityDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#interoperability -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#interoperability">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Interoperability is the degree to which the format and structure of the information conforms to previously returned information as well as data from other sources.</skos:definition>
+        <skos:prefLabel xml:lang="en">Interoperability</skos:prefLabel>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#conciseness"/>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#syntaticValidity"/>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#representationalDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#interpretability -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#interpretability">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Interpretability refers to technical aspects of the data, that is, whether information is represented using an appropriate notation and whether the machine is able to process the data.</skos:definition>
+        <skos:prefLabel xml:lang="en">Interpretability</skos:prefLabel>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#versatility"/>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#representationalDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#licensing -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#licensing">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Licensing is defined as the granting of permission for a consumer to re-use a dataset under defined conditions.</skos:definition>
+        <skos:prefLabel xml:lang="en">Licensing</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#accessibilityDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#performance -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#performance">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Performance refers to the efficiency of a system that binds to a large dataset, that is, the more performant a data source is the more efficiently a system can process data.</skos:definition>
+        <skos:prefLabel xml:lang="en">Performance</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#accessibilityDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#relevancy -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#relevancy">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Relevancy refers to the provision of information which is in accordance with the task at hand and important to the users’ query.</skos:definition>
+        <skos:prefLabel xml:lang="en">Relevancy</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#contextualDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#representationalConciseness -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#representationalConciseness">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Representational-conciseness refers to the representation of the data, which is compact and well formatted on the one hand and clear and complete on the other hand.</skos:definition>
+        <skos:prefLabel xml:lang="en">Representational-conciseness</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#representationalDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#security -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#security">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Security is the extent to which data is protected against alteration and misuse.</skos:definition>
+        <skos:prefLabel xml:lang="en">Security</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#accessibilityDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#semanticAccuracy -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#semanticAccuracy">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Semantic accuracy is defined as the degree to which data values correctly represent the real world facts.</skos:definition>
+        <skos:prefLabel xml:lang="en">Semantic accuracy</skos:prefLabel>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#completeness"/>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#consistency"/>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#interlinking"/>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#syntaticValidity"/>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#timeliness"/>
+        <skos:related rdf:resource="http://www.w3.org/2016/05/ldqd#trustworthiness"/>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#intrinsicDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#syntacticValidity -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#syntacticValidity">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Syntactic validity is defined as the degree to which an RDF document conforms to the specification of the serialization format.</skos:definition>
+        <skos:prefLabel xml:lang="en">Syntactic validity</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#intrinsicDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#timeliness -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#timeliness">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Timeliness measures how up-to-date data is relative to a specific task.</skos:definition>
+        <skos:prefLabel xml:lang="en">Timeliness</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#contextualDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#trustworthiness -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#trustworthiness">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Trustworthiness is defined as the degree to which the information is accepted to be correct, true, real and credible.</skos:definition>
+        <skos:prefLabel xml:lang="en">Trustworthiness</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#contextualDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#understandability -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#understandability">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Understandability refers to the ease with which data can be comprehended without ambiguity and be used by a human information consumer.</skos:definition>
+        <skos:prefLabel xml:lang="en">Understandability</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#contextualDimensions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2016/05/ldqd#versatility -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2016/05/ldqd#versatility">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:definition xml:lang="en">Versatility refers to the availability of the data in different representations and in an internationalized way.</skos:definition>
+        <skos:prefLabel xml:lang="en">Versatility</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://www.w3.org/2016/05/ldqd#representationalDimensions"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000314">
+        <rdfs:label>is proxy for</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2016/05/ldqd#accessibilityDimensions">
+        <skos:prefLabel xml:lang="en">Accessibility</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2016/05/ldqd#contextualDimensions">
+        <skos:prefLabel xml:lang="en">Contextual dimensions</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2016/05/ldqd#intrinsicDimensions">
+        <skos:prefLabel xml:lang="en">Intrinsic dimensions</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2016/05/ldqd#representationalDimensions">
+        <skos:prefLabel xml:lang="en">Representational Dimensions</skos:prefLabel>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
