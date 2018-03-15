@@ -6,7 +6,12 @@ The early development of the IEO was sponsored by [CNRS](http://www.cnrs.fr/inde
 The current contributors are:
 - [Cyril François](https://isterre.fr/auteur/cyril-francois)
 
+## Contact and contributions
+We welcome input on any theme related to the Industrial Ecology. Please use this GitHub repository's [Issue tracker](https://github.com/cfrancois7/IEO-ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology. Please be encouraged to share your knowledge!
 
+## Additional documentation
+A wiki is being prepared to provide the basic information for users.
+
+## Licenses
 <b>Code license:</b> [New BSD License](http://opensource.org/licenses/BSD-3-Clause)
-
 <b>Content license:</b> [Creative Commons 3.0 BY](http://creativecommons.org/licenses/by/3.0/) 
